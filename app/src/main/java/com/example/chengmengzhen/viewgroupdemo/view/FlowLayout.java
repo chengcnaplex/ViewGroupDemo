@@ -145,7 +145,7 @@ public class FlowLayout extends ViewGroup {
                 //计算每个view的布局参数
                 int cl = left + lp.leftMargin;
                 int ct = top + lp.topMargin;
-                int cr = left + child.getMeasuredWidth();
+                int cr = cl + child.getMeasuredWidth();
                 int cb = ct + child.getMeasuredHeight();
                 Log.e(TAG, child + " , l = " + cl + " , t = " + ct + " , r ="
                         + cr + " , b = " + cb+" ,child.getMeasuredWidth()"+child.getMeasuredWidth());
